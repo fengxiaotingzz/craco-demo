@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    [
+      "babel-plugin-react-css-modules",
+      {
+        "generateScopedName": "[local]_[hash:base64:6]",
+        "filetypes": {
+          ".styl": { "syntax": "sugarss" },
+          ".sass": { "syntax": "sugarss" }
+        },
+        "webpackHotModuleReloading": true,
+        "handleMissingStyleName": "wraning",
+        "exclude": ".css$"
+      }
+    ]
+  ]
+}
